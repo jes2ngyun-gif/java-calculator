@@ -1,4 +1,4 @@
-package com.example.calculator;
+package com.example.calculator.step1;
 
 import java.util.Scanner;
 
@@ -15,10 +15,7 @@ public class App {
         System.out.print("두번째 숫자 : ");
         int num2 = scanner.nextInt();
 
-
-
-
-            System.out.print("연산자를 입력하세요 (+, -, *, /) : ");
+        System.out.print("연산자를 입력하세요 (+, -, *, /) : ");
             char operator = scanner.next().charAt(0);
 
             switch (operator) {
