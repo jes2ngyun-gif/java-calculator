@@ -44,11 +44,7 @@ public class Calculator {
         return resultList;
 
     }
-    public void setResultList(List<Double> resultList) {
 
-        this.resultList = resultList;
-
-    }
     public void removeResult() {
 
         if (!resultList.isEmpty()) {
