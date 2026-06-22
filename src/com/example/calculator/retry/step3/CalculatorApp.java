@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class CalculatorApp {
+private static final String EXIT = "exit";
 
     public static void main(String[] args) {
 
@@ -41,8 +42,17 @@ public class CalculatorApp {
                 System.out.println(e.getMessage());
             }
 
+            System.out.print("더 계산하시겠습니까? (exit 입력 시 종료) : ");
 
+            String answer = sc.next();
+
+            if (answer.equals(EXIT)) {
+                System.out.println("계산기를 종료합니다.");
+
+                break;
+            }
         }
+        sc.close();
 
     }
 }
