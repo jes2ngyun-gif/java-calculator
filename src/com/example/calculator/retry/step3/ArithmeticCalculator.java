@@ -41,5 +41,10 @@ public class ArithmeticCalculator<T extends Number> {
         return result;
     }
 
+    public List<Double> getResultList() {
+        return new ArrayList<>(resultList);
+    }
+
+
 
 }
