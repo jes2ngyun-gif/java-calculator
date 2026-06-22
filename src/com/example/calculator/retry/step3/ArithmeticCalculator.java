@@ -1,8 +1,11 @@
 package com.example.calculator.retry.step3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ArithmeticCalculator<T extends Number> {
 
-
+    private final List<Double> resultList = new ArrayList<>();
     public double calculate(T num1, T num2, OperatorType operator) {
 
         double first = num1.doubleValue();
@@ -33,7 +36,10 @@ public class ArithmeticCalculator<T extends Number> {
             default:
                 throw new IllegalArgumentException("잘못된 연산입니다.");
         }
+        resultList.add(result);
 
+        return result;
     }
+
 
 }
