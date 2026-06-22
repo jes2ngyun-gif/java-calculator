@@ -44,7 +44,11 @@ public class ArithmeticCalculator<T extends Number> {
     public List<Double> getResultList() {
         return new ArrayList<>(resultList);
     }
+    public List<Double> getGreaterResults(double target) {
 
-
+        return resultList.stream()
+                         .filter(result -> result > target)
+                          .toList();
+    }
 
 }
